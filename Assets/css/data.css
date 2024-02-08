@@ -5,7 +5,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    height: 12vw;
+    height: 20vw;
+    user-select: none;
 }
 
 .pics {
@@ -17,6 +18,7 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    user-select: none;
 }
 
 
