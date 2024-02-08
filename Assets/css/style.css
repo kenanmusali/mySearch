@@ -13,6 +13,7 @@ html {
     height: 100%;
     /* overflow: hidden; */
     cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
+    background-color: #efefef;
 }
 
 .search {
@@ -86,7 +87,7 @@ p, a {
 
 .container {
     background-color: #efefef;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
 }
