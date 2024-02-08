@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
+}
+
+.search {
+    height: 4vw;
+    width: 35vw;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 0.3vw solid #1e1e1e;
+    margin-left: 0vw;
+    font-size: 1.2vw;
+}
+
+p, a {
+    font-size: 0.9vw;
+}
+
+.text, .text1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+}
+
+.data {
+    margin-right: 1vw;  
+}
+
+.search::placeholder {
+    color: #b0b0b0;
+}
+
+.textHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images {
+    color: #1e1e1e;
+    font-size: 2vw;
+    margin-left: -0.5vw;
+    margin-right: 8%;
+}
+
+.flag {
+    margin-left: 0.3vw;
+    height: 0.6vw;
+}
+
+.screenSize {
+    display: none;
+}
+
+::selection {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.row {
+    padding-inline: 10px;
+    width: 100%;
+    height: fit-content;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3vw;
+    margin-top: 2vw;
+}
+
+.container {
+    background-color: #efefef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: #1e1e1e;
+    font-size: 4.2vw;
+    font-weight: 400;
+    margin-top: -0.5vw;
+}
+
+.flag1 {
+    margin-bottom: 0.5vw;
+}
+
+.textSection {
+    line-height: 5.6vw;
+    font-size: 4.6vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh !important;
+    align-items: end;
+    text-align: right !important;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: #1e1e1e;
+
+}
+
+/* hover */
+.HamMenu:hover,
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.05vw;
+    cursor: pointer;
+    cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
+}
+
+.text01:hover {
+    text-decoration: underline;
+    cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
+}
+
+.header:hover {
+    text-decoration: none;
+}
+
+/* hamburger-menu */
+.bar {
+    font-size: 9vw;
+}
+
+.HamMenu {
+    display: none;
+    white-space: nowrap;
+}
+
+.star {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    margin-left: 1vw;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
