@@ -11,7 +11,7 @@
 body,
 html {
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
 }
 
@@ -36,8 +36,8 @@ p, a {
     margin-right: 2%;
 }
 
-.data {
-    margin-right: 1vw;  
+.dataAPI {
+    margin-right: 2.5vw;  
 }
 
 .search::placeholder {
@@ -54,7 +54,7 @@ p, a {
     color: #1e1e1e;
     font-size: 2vw;
     margin-left: -0.5vw;
-    margin-right: 8%;
+    margin-right: 5%;
 }
 
 .flag {
@@ -68,7 +68,7 @@ p, a {
 
 ::selection {
     background-color: antiquewhite;
-    color: black;
+    color: #1e1e1e;
 }
 
 .row {
