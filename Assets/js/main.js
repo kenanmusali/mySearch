@@ -1,4 +1,3 @@
-
 // const postsElem = document.querySelector(".posts");
 
 // let url = "https://pixabay.com/api/?key=24090419-925e057925ba4cc124682bb5f&q=${}";
@@ -14,45 +13,42 @@
 //         });
 //     });
 
-
 const postsElem = document.querySelector(".posts");
 const searchInput = document.querySelector(".search");
-const loader = document.querySelector(".loadingbackground")
+
 
 function fetchImages(searchQuery) {
-    let url = `https://pixabay.com/api/?key=24090419-925e057925ba4cc124682bb5f&q=${searchQuery}`;
+  let url = `https://pixabay.com/api/?key=24090419-925e057925ba4cc124682bb5f&q=${searchQuery}`;
 
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-           
-            setTimeout(() => {
-                postsElem.innerHTML = "";
-            
-                data.hits.forEach(post => {
-                    postsElem.innerHTML += `
-                        <div class="post">
-                            <img class="pics" src="${post.webformatURL}">
-                        </div>`;
-                });
-                loader.style.display = "none";
-            }, 2000);
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+        postsElem.innerHTML = "";
 
+        data.hits.forEach(post => {
+            postsElem.innerHTML += `
+                <div class="post">
+                    <img class="pics" src="${post.webformatURL}">
+                </div>`;
         });
+    });
 }
-
 fetchImages("");
-searchInput.addEventListener("input", function() {
-    fetchImages(this.value.trim());
+searchInput.addEventListener("input", function () {
+  fetchImages(this.value.trim());
 });
 
 
 
-// postsElem.innerHTML = "";
 
-// data.hits.forEach(post => {
-//     postsElem.innerHTML += `
-//         <div class="post">
-//             <img class="pics" src="${post.webformatURL}">
-//         </div>`;
-// });
+// const loader = document.querySelector(".loadingbackground");
+// setTimeout(() => {
+//     loader.style.display = "none";
+// }, 1000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.querySelector(".loadingbackground");
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 1000);
+});
