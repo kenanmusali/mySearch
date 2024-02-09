@@ -5,14 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
-    cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
+    cursor: url('../Images/Cursor/classic.svg'), auto;
 }
 
 body,
 html {
     height: 100%;
     /* overflow: hidden; */
-    cursor: url('/Assets/Images/Cursor/classic.svg'), auto;
+    cursor: url('../Images/Cursor/classic.svg'), auto;
     background-color: #efefef;
 }
 
@@ -129,13 +129,9 @@ a:hover {
     text-decoration-style: solid;
     text-decoration-thickness: 0.05vw;
     cursor: pointer;
-    cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
+    cursor: url('../Images/Cursor/pointer.svg'), pointer;
 }
 
-a:hover {
-    text-decoration: underline;
-    cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
-}
 
 .header:hover {
     text-decoration: none;
