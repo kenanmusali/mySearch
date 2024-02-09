@@ -32,3 +32,6 @@
     height: fit-content;
 }
 
+.post:hover {
+    padding: 0.32vw 0.3vw;
+}
