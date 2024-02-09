@@ -132,7 +132,7 @@ a:hover {
     cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
 }
 
-.text01:hover {
+a:hover {
     text-decoration: underline;
     cursor: url('/Assets/Images/Cursor/pointer.svg'), pointer;
 }
